@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import NavBar from './Components/Navbar/navbar';
+import Home from './Components/Home/home';
+import Events from './Components/Events/events';
+import Register from './Components/Register/register';
+import PreviousSynergy from './Components/PreviousSynergy/PreviousSynergy';
+import Contact from './Components/Contact/contact';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar/>   
+      <Routes>
+        <Route exact path="/" element={<Home/>}/>
+        <Route path="/events" element={<Events/>}/>
+        <Route path="/register" element={<Register/>}/>
+        <Route path="/previous-synergy" element={<PreviousSynergy/>}/>
+        <Route path="/contact-us" element={<Contact/>}/>
+      </Routes> 
+    </Router>
   );
 }
 
