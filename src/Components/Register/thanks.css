@@ -1,0 +1,10 @@
+.thanks > h2, .thanks > p{
+    text-align: center;
+}
+.thanks > p > b{
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+.thanks > p{
+    font-size: 16px;
+}

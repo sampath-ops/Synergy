@@ -1,5 +1,8 @@
 import "./Form.css";
 import { useState } from "react";
+import { collection, addDoc } from "firebase/firestore"; 
+import {db} from "../../fierbaseConfig";
+import Thanks from "./Thanks";
 
 const Form = () => {
 
@@ -16,6 +19,8 @@ const Form = () => {
     });
     const [acc,setAcc] = useState("no");
     const [error,setError] = useState(false);
+    const [id,setId] = useState("");
+    const [thanks,setThanks] = useState(false);
 
 
     const nameChangeHandler = (e)=>{
@@ -74,13 +79,21 @@ const Form = () => {
     }
 
 
-    const getDataHandler = (e)=>{
+    const getDataHandler = async(e)=>{
+
         e.preventDefault();
+
         if(events.length < 1){
             setError(true);
             return;
         }
+
+        const uniqueId = Math.floor(Math.random()*90000) + 10000;
+
+        setId(uniqueId);
+    
         const details = {
+            id:uniqueId,
             name,
             email,
             phone,
@@ -91,7 +104,12 @@ const Form = () => {
             accomodation:acc
         }
 
-        console.log(details);
+        // Add a new document in collection "cities"
+        await addDoc(collection(db, "students"), details);
+
+        // console.log(details);
+
+        setThanks(true);
 
         reset();
 
@@ -115,10 +133,15 @@ const Form = () => {
         }
     }
 
+    const studentAbstractData = {
+        studentId : id,
+        mail : email
+    }
 
     return ( 
         <div className="form_container">
-        
+        {
+            thanks ? <Thanks studentAbstract={studentAbstractData}/> : 
         <form onSubmit={getDataHandler}>
             <h2>Register</h2>
             <input type="text" placeholder="Enter Name" value={name} onChange={nameChangeHandler} required/>
@@ -189,6 +212,7 @@ const Form = () => {
               <button type="submit">Submit</button>    
             </div>
         </form>
+        }
         </div>
      );
 }
