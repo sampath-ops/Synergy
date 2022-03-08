@@ -2,30 +2,32 @@ import "./navbar.css";
 import {useState} from "react";
 import { NavLink } from "react-router-dom";
 
-function NavBar() {
+function NavBar(props) {
 
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
   const Close = () => setClick(false);
   
+  const customNavbar = props.className;
+
   return (
     <div>
      <div className={click ? "main-container" : ""}  onClick={()=>Close()} />
-      <nav className="navbar" onClick={e => e.stopPropagation()}>
+      <nav className={`navbar ${customNavbar}`} onClick={e => e.stopPropagation()}>
         <div className="nav-container">
 
-          <NavLink exact to="/" className="nav-logo">
+          <p><NavLink to="/" className="nav-logo">
             Synergy
             {/* <i className="fa fa-code"></i> */}
           </NavLink>
-
+          </p>
+          
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <NavLink
-                exact
                 to="/"
-                activeClassName="active"
+                activeclassname="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
@@ -35,9 +37,8 @@ function NavBar() {
 
             <li className="nav-item">
               <NavLink
-                exact
                 to="/events"
-                activeClassName="active"
+                activeclassname="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
@@ -47,9 +48,8 @@ function NavBar() {
 
             <li className="nav-item">
               <NavLink
-                exact
                 to="/previous-synergy"
-                activeClassName="active"
+                activeclassname="active"
                 className="nav-links"
                onClick={click ? handleClick : null}
               >
@@ -58,10 +58,9 @@ function NavBar() {
             </li>
 
             <li className="nav-item">
-              <NavLink
-                exact
+              <NavLink 
                 to="/register"
-                activeClassName="active"
+                activeclassname="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
@@ -70,10 +69,9 @@ function NavBar() {
             </li>
             
             <li className="nav-item">
-              <NavLink
-                exact
+              <NavLink   
                 to="/contact-us"
-                activeClassName="active"
+                activeclassname="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
@@ -88,6 +86,7 @@ function NavBar() {
           
         </div>
       </nav>
+      {props.children}
     </ div>
   );
 }

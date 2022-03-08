@@ -1,8 +1,16 @@
+import "./register.css";
+import NavBar from "../Navbar/navbar";
+import Bulb from "./Bulb";
+import Form from "./Form";
+
 const Register = () => {
     return ( 
-        <div className="register">
-            Register
-        </div>
+        <NavBar className="second_nav">
+            <div className="register">
+                <Bulb/>
+                <Form/>
+            </div>
+        </NavBar>
      );
 }
  

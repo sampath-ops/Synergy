@@ -12,7 +12,7 @@ const Hero = () => {
             <div className="cube"></div>
             <div className="hero__title">
                 <p>Synergy</p>
-                <Link to="/register"><button class="btn-hover color-3">Register Now</button></Link>
+                <Link to="/register"><button className="btn-hover color-3">Register Now</button></Link>
             </div>
             
         </div>

@@ -1,0 +1,178 @@
+form{
+    position: relative;
+    top: 10%;
+    margin: auto;
+    max-width: 700px;
+    background-color: rgba(20, 20, 20, 0.8);
+    color: #ffff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+}
+.submit_button{
+    text-align: center;
+}
+form > h2{
+    text-align: center;
+    font-size: 26px;
+}
+form > input{
+    display: block;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid white;
+    background: none;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+
+label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    column-gap: 20px;
+    text-align: start;
+    margin-left: 63px;
+    font-weight: 600;
+}
+select{
+    padding: 8px;
+    border-radius: 22px;
+    background: white;
+    font-weight: 600;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    width: 20%;
+    padding-left: 20px;
+}
+
+select:focus-visible{
+    border: none;
+    outline: none;
+}
+.error{
+    color: red;
+    font-weight: 500;
+    font-size: 14px;
+}
+input:focus{
+    outline: none;
+}
+.submit_button  > button{
+    background-color: #deebdd;
+    background-image: linear-gradient(315deg, #deebdd 0%, #bbdbbe 74%);
+    border: none;
+    padding: 15px;
+    border-radius: 24px;
+    width: 25%;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 2rem 0;
+    transition: all .2s ease-in-out;
+}
+
+.submit_button  > button:hover {
+   transform: scale(1.1);
+}
+
+.select_events_container{
+    margin-top: 2rem;
+}
+.select_events_container > label{
+    margin-bottom: 12px;
+}
+
+.accomodation{
+    margin-top: 1.5rem;
+}
+
+.accomodation > label:first-child{
+    margin-bottom: 12px;
+}
+
+.acc_lable{
+    column-gap: 5px;
+}
+
+.select_events > label{
+    display: inline;
+}
+
+.event_name{
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.event_check:checked {
+    background: red;
+    color: white;
+  }
+
+/* radio button styles */
+
+input[type='radio']:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+@media(max-width:1023px){
+    form{
+        padding: 1rem;
+        height: inherit;
+        margin: 0 10px;
+    }
+    form > button{
+        width: 50%;
+    }
+    form > input{
+        width: 85%;
+    }
+    label{
+        margin-left: 23px;
+        font-size: 16px;
+        column-gap: 10px;
+    }
+    select{
+        width: 37%;
+        font-size: 12px;   
+    }
+    .submit_button > button{
+        width: 50%;
+    }
+}

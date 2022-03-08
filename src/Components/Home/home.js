@@ -1,9 +1,12 @@
 import Hero from "./Hero/hero";
+import NavBar from "../Navbar/navbar";
 const Home = () => {
     return ( 
-        <div className="home">
-            <Hero/>
-        </div>
+        <NavBar>   
+            <div className="home">
+                <Hero/>
+            </div>
+        </NavBar>
      );
 }
  
