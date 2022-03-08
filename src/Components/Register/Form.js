@@ -3,6 +3,8 @@ import { useState } from "react";
 import { collection, addDoc } from "firebase/firestore"; 
 import {db} from "../../fierbaseConfig";
 import Thanks from "./Thanks";
+import axios from "axios";
+import ClipLoader from "react-spinners/ClipLoader";
 
 const Form = () => {
 
@@ -19,7 +21,7 @@ const Form = () => {
     });
     const [acc,setAcc] = useState("no");
     const [error,setError] = useState(false);
-    const [id,setId] = useState("");
+    const [studentInfo,setStudentInfo] = useState({});
     const [thanks,setThanks] = useState(false);
 
 
@@ -90,8 +92,8 @@ const Form = () => {
 
         const uniqueId = Math.floor(Math.random()*90000) + 10000;
 
-        setId(uniqueId);
-    
+        setStudentInfo({id:uniqueId,email});
+
         const details = {
             id:uniqueId,
             name,
@@ -104,13 +106,23 @@ const Form = () => {
             accomodation:acc
         }
 
-        // Add a new document in collection "cities"
-        await addDoc(collection(db, "students"), details);
+        setLoading(true);
 
+        // Add a new document in collection "cities"
+        // await addDoc(collection(db, "students"), details);
+
+        const mailData = {
+            to : email,
+            subject:"Registered for Synergy Events",
+            text: uniqueId
+        }
+
+        const result = await axios.post("http://localhost:5000/v1/text-mail",mailData);
+
+        console.log(result);
         // console.log(details);
 
         setThanks(true);
-
         reset();
 
     }
@@ -133,15 +145,14 @@ const Form = () => {
         }
     }
 
-    const studentAbstractData = {
-        studentId : id,
-        mail : email
-    }
+    // loader
+   
+    let [loading, setLoading] = useState(false);
 
     return ( 
         <div className="form_container">
         {
-            thanks ? <Thanks studentAbstract={studentAbstractData}/> : 
+            thanks ? <Thanks studentAbstract={studentInfo}/> : 
         <form onSubmit={getDataHandler}>
             <h2>Register</h2>
             <input type="text" placeholder="Enter Name" value={name} onChange={nameChangeHandler} required/>
@@ -209,7 +220,7 @@ const Form = () => {
             </div>
 
             <div className="submit_button">
-              <button type="submit">Submit</button>    
+              <button type="submit"> {loading ? <ClipLoader loading={loading} size={15} /> : "Submit"}  </button>    
             </div>
         </form>
         }
