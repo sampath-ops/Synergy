@@ -109,7 +109,7 @@ const Form = () => {
         setLoading(true);
 
         // Add a new document in collection "cities"
-        // await addDoc(collection(db, "students"), details);
+        await addDoc(collection(db, "students"), details);
 
         const mailData = {
             to : email,
