@@ -1,8 +1,6 @@
 import EventCard from "./EventCard";
 const EventsGridLayout = ({EventArray}) => {
 
-
-
     return ( 
         <div className="events">
         {
