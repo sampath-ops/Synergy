@@ -1,28 +1,44 @@
 const nonTechEvents = [
     {
-        image:"paper conferal",
-        content:"Bridge the gap with closed minds through carful dissection of ideas and solid presentation of fact."
+        image:"mathWar",
+        name:"MathWar",
+        content:"The Laws of nature are but the mathematical thoughts of god."
     },
     {
         image:"paper conferal",
-        content:"Bridge the gap with closed minds through carful dissection of ideas and solid presentation of fact."
+        name:"Quiz",
+        content:"It is word ‘Quiz’ what makes jeopardy among all game shows to encourage learning."
     },
     {
-        image:"paper conferal",
-        content:"Bridge the gap with closed minds through carful dissection of ideas and solid presentation of fact."
+        image:"fluenta",
+        name:"Fluenta",
+        content:"Your Grammar is a reflection of your image."
     },
     {
-        image:"paper conferal",
-        content:"Bridge the gap with closed minds through carful dissection of ideas and solid presentation of fact."
+        image:"adzap",
+        name:"Adzap",
+        content:"Penetrate the public mind with your persuasive advertising."
     },
     {
-        image:"paper conferal",
-        content:"Bridge the gap with closed minds through carful dissection of ideas and solid presentation of fact."
+        image:"brainSpark",
+        name:"BrainSpark",
+        content:"Solve the problems with sparks of logic."
     },
     {
-        image:"paper conferal",
-        content:"Bridge the gap with closed minds through carful dissection of ideas and solid presentation of fact."
-    }
+        image:"juniorScientist",
+        name:"JuniorScientist",
+        content:"Prove that everything is theoretically impossible until it is done."
+    },
+    {
+        image:"photography",
+        name:"Photography",
+        content:"Capture the moments with a button of life."
+    },
+    {
+        image:"multimediaPresentation",
+        name:"MultimediaPresentation",
+        content:"Let your ideas run on the screen."
+    },
 
 ]
 

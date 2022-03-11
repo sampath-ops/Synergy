@@ -7,7 +7,7 @@ const EventsGridLayout = ({EventArray}) => {
             EventArray.map((event,index)=>{
                 const image = require(`../../images/eventPics/${event.image}.jpg`);
                 return(
-                    <EventCard key={index} img={image} text={event.content}/>
+                    <EventCard key={index} img={image} text={event.content} Eventname={event.name}/>
                 )
             })
         }    

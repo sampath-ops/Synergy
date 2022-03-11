@@ -53,7 +53,7 @@ function NavBar(props) {
                 className="nav-links"
                onClick={click ? handleClick : null}
               >
-                Memory
+                Memories
               </NavLink>
             </li>
 

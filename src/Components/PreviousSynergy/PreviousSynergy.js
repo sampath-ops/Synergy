@@ -1,8 +1,12 @@
+import NavBar from "../Navbar/navbar";
+import PreviousHero from "./PreviousHero";
 const PreviousSynergy = () => {
     return ( 
-        <div className="previous_synergy">
-            previous synergy
-        </div>
+        <NavBar className="second_nav">
+            <div className="previous_synergy">
+                <PreviousHero/>
+            </div>
+        </NavBar>
      );
 }
  

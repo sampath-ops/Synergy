@@ -1,8 +1,11 @@
+import NavBar from "../Navbar/navbar";
 const Contact = () => {
     return ( 
-        <div className="contact">
+        <NavBar className="second_nav">
+            <div className="contact">
             contact
-        </div>
+            </div>
+        </NavBar>
      );
 }
  
