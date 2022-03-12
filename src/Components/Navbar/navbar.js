@@ -1,6 +1,7 @@
 import "./navbar.css";
 import {useState} from "react";
 import { NavLink } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 function NavBar(props) {
 
@@ -87,6 +88,7 @@ function NavBar(props) {
         </div>
       </nav>
       {props.children}
+      <Footer/>
     </ div>
   );
 }

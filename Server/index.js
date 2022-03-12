@@ -1,5 +1,5 @@
 const express = require("express");
-const bodyParser = require('body-parser');
+const Excel = require("./Excel");
 const nodemailer = require('nodemailer');
 const cors = require("cors");
 const app = express();
@@ -53,3 +53,6 @@ route.post('/text-mail', (req, res) => {
     //     res.status(200).send({ message: "Mail send"});
     // });
 });
+
+// get excel sheet
+app.get("/excel",Excel.getData);

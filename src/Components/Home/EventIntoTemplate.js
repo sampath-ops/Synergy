@@ -9,8 +9,8 @@ const EventIntroTemplate = ({title,datum}) => {
                 datum.map((data,index)=>{
                     const image = require(`../../images/eventPics/${data.image}.jpg`);
                     return(
-                        <Link to="/events">
-                            <div className="individual_event" key={index}>
+                        <Link to="/events" key={index}>
+                            <div className="individual_event" >
                                 <img src={image} alt="tech" />
                                 <p>{data.name}</p>
                             </div>
