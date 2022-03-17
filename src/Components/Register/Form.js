@@ -117,7 +117,7 @@ const Form = () => {
             text: uniqueId
         }
 
-        const result = await axios.post("http://localhost:5000/v1/text-mail",mailData);
+        const result = await axios.post("https://stark-earth-12970.herokuapp.com/v1/text-mail",mailData);
 
         console.log(result);
         // console.log(details);
