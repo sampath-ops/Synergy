@@ -109,7 +109,7 @@ const Form = () => {
         setLoading(true);
 
         // Add a new document in collection "cities"
-        // await addDoc(collection(db, "students"), details);
+        await addDoc(collection(db, "students"), details);
 
         const mailData = {
             to : email,
@@ -117,9 +117,9 @@ const Form = () => {
             text: uniqueId
         }
 
-        const result = await axios.post("https://stark-earth-12970.herokuapp.com/v1/text-mail",mailData);
+        await axios.post("https://stark-earth-12970.herokuapp.com/v1/text-mail",mailData);
 
-        console.log(result);
+        // console.log(result);
         // console.log(details);
 
         setThanks(true);
