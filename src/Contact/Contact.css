@@ -1,0 +1,76 @@
+ 
+.Contact__header{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 20px;
+    margin: 2% 20% 10px 35%;
+}
+.Contact__header >h1{
+    margin-left:120px;   
+}
+.Contact__container{
+    position: absolute;
+    border: 3px solid rgb(0, 0, 0);
+    height: 76vh;
+    width: 30%;
+    
+     margin: 2% 30% 5% 6%;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.3)0px 19px 38px,rgba(0,0,0,0.22)0px 15px 12px;
+     
+   
+}
+.Contact__information{
+    text-align: center;
+ padding-top: 10px;
+}
+.Contact__information >h1{
+    padding: 10px 40px 0 20px;
+    color: aliceblue;
+}
+.Contact__information>a{
+    text-align: center;
+   color: rgb(187, 8, 8);
+   font-size: 15px;
+   font-family: sans-serif;
+   font-weight: 900;
+    
+}
+.Contact__social{
+color: rgb(0, 0, 0);
+padding-top: 40px;
+}
+.Contact__social>i{
+    color: ghostwhite;
+    padding: 30px;
+}
+.Contact__social>i:hover{
+   font-size: 20px;
+   color: black;
+   transition: 0.5s;
+}
+.Contact__symbols>i{
+    color: rgb(207, 24, 24);
+    padding: 110px 20px 0 30px;
+    cursor: pointer;
+    
+}
+.Contact__symbols>i:hover{
+    font-size: 25px;
+     color: black;
+     transition: 0.5s;
+}
+.Contact__social>a{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.Contact__social>a:hover{
+    font-size: 15px;
+    text-decoration: underline;
+    
+    transition: 0.5s;
+    padding-bottom: 2px;
+}
+   

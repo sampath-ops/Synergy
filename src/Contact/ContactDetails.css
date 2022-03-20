@@ -1,0 +1,105 @@
+ 
+ *{
+     padding: 0%;
+     margin: 0;
+     box-sizing: border-box;
+      
+    
+     
+ }  
+ body{
+    background-color: #848d02;
+     background-image:url('bulb.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100vh;
+     width: 100%;
+
+ }
+ section{
+     margin-left: 37%;
+     margin-top: 3%;
+     font: 500;
+     font-weight: bolder;
+     
+     
+ }
+ .ContactDetails__container{
+     border: 3px solid rgb(0, 0, 0);
+     height: 76vh;
+     width: 80%;
+     border-radius: 10px;
+       
+     box-shadow: rgba(50,50,93,0.25)0px 50px 100px -20px,rgba(0,0,0,0.3)0px 30px 60px -30px,rgba(10,37,64,0.35)0px -2px 6px 0px inset;
+      
+    }
+ .ContactDetails__container>form{
+     padding: 40px 40px 0 50px;
+ }
+.ContactDetails__input> label{
+     padding: 40px 70px;
+     font-weight: bolder;
+     color: rgb(0, 0, 0);
+     font-size: larger;
+ }
+ .ContactDetails__input>input{
+      margin-top: 20px;
+      margin-left: 10px;
+      padding-left: 20px;
+      border: none;
+      border-bottom: 2px solid rgb(101, 8, 119);
+      size: 50px;
+      border-radius: 10px;
+ }
+ .ContactDetails__input>input:hover{
+     padding: 0 5px 0  0;
+     transition: 1s;
+     background-color: black;
+     color: ghostwhite;
+ }
+ .ContactDetails__input>textarea{
+     margin-top: 20px;
+     margin-left: 10px;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     border-radius: 5px;
+     
+      
+ }
+ .ContactDetails__input>textarea:hover{
+    padding: 0 5px 0  0;
+    transition: 1s;
+    background-color: black;
+    color: ghostwhite;
+ }
+ button{
+    margin-left: 50%;
+    margin-top: 8%;
+    padding: 8px 15px;
+    background-color: rgb(255, 253, 253);
+    border-radius: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bolder;
+    border: 3px solid black;
+ }
+ button:hover{
+     box-shadow: 0 0  5px 5px rgb(104, 240, 183);
+     transition: 0.5s;
+     padding: 10px;
+     cursor: pointer;
+     background-color: rgba(0, 0, 0, 0.959);
+     padding: 10px 20px;
+     color: ghostwhite;
+     border-radius: 20px;
+ }
+ #phone>input{
+    margin-left: 40px; 
+ } 
+ #email>input{
+    margin-left: 45px;
+} 
+#firstname>input{
+ margin-left: 20px;
+}
+#lastname>input{
+    margin-left: 20px;
+}
