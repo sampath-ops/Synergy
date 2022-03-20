@@ -16,8 +16,8 @@ const Footer = () => {
                 <Link to="/previous-synergy"><li>Memory</li></Link>  
             </ul>
             <ul className="link_part">
-                <Link to="register"><li>Register</li></Link>
-                <Link to="contact-us"><li>Contact</li></Link>
+                <Link to="/register"><li>Register</li></Link>
+                <Link to="/contact-us"><li>Contact</li></Link>
                 <div className="social_icons">
                     {
                         icons.map((icon,index)=>{
