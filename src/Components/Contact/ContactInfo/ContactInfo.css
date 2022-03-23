@@ -1,0 +1,31 @@
+.contact_details{
+    margin: 18px 0;
+}
+.contact_details > img{
+    width: 1.5%;
+    margin-right: 10px;
+}
+.contact_social{
+    width: 25px;
+    height: 25px;
+    transition: all 0.1s ease-in;
+}
+.contact_info{
+    background: #F4D03F;
+    padding: 18px;
+}
+.contact_social:hover{
+    transform: scale(1.2);
+}
+.contact_social_icons{
+    margin-top: 50px;
+}
+
+@media(max-width:1023px){
+    .contact_details > img{
+        width: 5%;
+    }
+    .contact_social{ 
+        justify-self: center;
+    }
+}

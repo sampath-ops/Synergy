@@ -1,3 +1,20 @@
 .contact{
     margin-top: 100px;
 }
+.contact_form_container{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+}
+.contact_title{
+    text-align: center;
+}
+.contact_title > h2{
+    font-weight: 700;
+    font-size: 30px;
+    margin: 14px 0;
+}
+@media(max-width :1023px){
+    .contact_form_container{
+        display: block;
+    }
+}

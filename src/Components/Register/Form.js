@@ -153,7 +153,7 @@ const Form = () => {
         <div className="form_container">
         {
             thanks ? <Thanks studentAbstract={studentInfo}/> : 
-        <form onSubmit={getDataHandler}>
+        <form className="register_form" onSubmit={getDataHandler}>
             <h2>Register</h2>
             <input type="text" placeholder="Enter Name" value={name} onChange={nameChangeHandler} required/>
             <input type="email" placeholder="Enter Email" value={email} onChange={emailChangeHandler} required/>

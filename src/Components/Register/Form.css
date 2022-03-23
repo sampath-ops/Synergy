@@ -1,4 +1,4 @@
-form{
+.register_form{
     position: relative;
     top: 10%;
     margin: auto;
@@ -12,11 +12,11 @@ form{
 .submit_button{
     text-align: center;
 }
-form > h2{
+.register_form > h2{
     text-align: center;
     font-size: 26px;
 }
-form > input{
+.register_form > input{
     display: block;
     padding: 10px;
     border: none;
@@ -152,15 +152,15 @@ input[type='radio']:checked:after {
 }
 
 @media(max-width:1023px){
-    form{
+    .register_form{
         padding: 1rem;
         height: inherit;
         margin: 0 10px;
     }
-    form > button{
+    .register_form > button{
         width: 50%;
     }
-    form > input{
+    .register_form > input{
         width: 85%;
     }
     label{
