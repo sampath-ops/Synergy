@@ -107,3 +107,14 @@
               box-shadow: 0 0 8px 3px #C586C0,0 0 4px 2px #C586C0;
     }
   }
+
+
+  @media(max-width:1023px){
+        .days_left{
+                font-size: 18px;
+                column-gap: 0;
+        }
+        .timer_box{
+                width: 62px;
+        }
+  }
