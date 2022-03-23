@@ -1,0 +1,10 @@
+.participants_count{
+    font-size: 24px;
+    margin: 40px 0;
+}
+
+@media(max-width:1023px){
+    .participants_count{
+        font-size: 20px;
+    }
+}

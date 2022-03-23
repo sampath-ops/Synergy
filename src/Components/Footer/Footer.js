@@ -2,7 +2,7 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 const Footer = () => {
 
-    const icons = ["facebook","insta","linkedin","mail","twitter"];
+    const icons = ["facebook","insta","mail"];
 
     return ( 
         <div className="footer">
