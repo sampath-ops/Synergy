@@ -48,6 +48,17 @@ function NavBar(props) {
             </li>
 
             <li className="nav-item">
+              <NavLink 
+                to="/register"
+                activeclassname="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+              >
+                Register
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
               <NavLink
                 to="/previous-synergy"
                 activeclassname="active"
@@ -58,16 +69,6 @@ function NavBar(props) {
               </NavLink>
             </li>
 
-            <li className="nav-item">
-              <NavLink 
-                to="/register"
-                activeclassname="active"
-                className="nav-links"
-                onClick={click ? handleClick : null}
-              >
-                Register
-              </NavLink>
-            </li>
             
             <li className="nav-item">
               <NavLink   
