@@ -1,9 +1,13 @@
 .contact{
-    margin-top: 100px;
+    padding: 80px;
+    margin-top: 80px;
+    background-color: #e0e0df;
 }
 .contact_form_container{
     display: grid;
     grid-template-columns: 1.5fr 2fr;
+    box-shadow: 6px 6px 10px gray;
+    margin-top: 45px;
 }
 .contact_title{
     text-align: center;
@@ -15,6 +19,18 @@
 }
 @media(max-width :1023px){
     .contact_form_container{
-        display: block;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: "form"
+                              "details";
+    }
+    .contact_info{
+        grid-area: details;
+    }
+    .contact_form_element{
+        grid-area: form;
+    }
+    .contact{
+        padding: 10px;
     }
 }

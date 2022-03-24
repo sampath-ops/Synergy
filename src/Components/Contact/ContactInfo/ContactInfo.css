@@ -1,8 +1,8 @@
 .contact_details{
-    margin: 18px 0;
+    margin: 35px 0;
 }
 .contact_details > img{
-    width: 1.5%;
+    width: 3.5%;
     margin-right: 10px;
 }
 .contact_social{
@@ -11,14 +11,17 @@
     transition: all 0.1s ease-in;
 }
 .contact_info{
+    display: grid;
+    grid-template-columns: auto;
     background: #F4D03F;
-    padding: 18px;
+    padding: 25px;
 }
 .contact_social:hover{
     transform: scale(1.2);
 }
 .contact_social_icons{
     margin-top: 50px;
+    align-self: end;
 }
 
 @media(max-width:1023px){

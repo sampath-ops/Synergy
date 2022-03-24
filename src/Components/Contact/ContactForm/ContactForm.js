@@ -1,7 +1,7 @@
 import "./ContactForm.css";
 const ContactForm = () => {
     return (  
-       <form>
+       <form className="contact_form_element">
             <div className="contact_form">
                 <div className="input_container">
                     <label className="contact_user">FirstName</label>
@@ -23,6 +23,9 @@ const ContactForm = () => {
                     <label className="contact_user">Message</label>
                     <textarea  rows="10" placeholder="Write your message..."></textarea>
                 </div>
+            </div>
+            <div className="contact_submit">
+                <button>Send Message</button>
             </div>
        </form>
     );
