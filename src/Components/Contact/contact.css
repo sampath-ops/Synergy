@@ -21,16 +21,17 @@
     .contact_form_container{
         display: grid;
         grid-template-columns: auto;
-        grid-template-areas: "form"
-                              "details";
+        /* grid-template-areas: "form"
+                              "details"; */
     }
-    .contact_info{
+    /* .contact_info{
         grid-area: details;
     }
     .contact_form_element{
         grid-area: form;
-    }
+    } */
     .contact{
         padding: 10px;
+        padding-bottom: 50px;
     }
 }

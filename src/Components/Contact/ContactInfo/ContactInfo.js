@@ -4,7 +4,20 @@ import email from "../../../images/Contact/ContactInfo/email.svg";
 import location from "../../../images/Contact/ContactInfo/location.svg";
 const ContactInfo = () => {
 
-    const icons = ["facebook","insta","mail"];
+    const icons = [
+        {
+            name:"facebook",
+            link:"#"
+        },
+        {
+            name:"insta",
+            link:"https://instagram.com/synergy_22.0?utm_medium=copy_link"
+        },
+        {
+            name:"mail",
+            link:"mailto:gcesynergy2022@gmail.com"
+        }
+    ];
 
     return ( 
         <div className="contact_info">
@@ -31,11 +44,13 @@ const ContactInfo = () => {
             <div className="social_icons contact_social_icons">
                     {
                         icons.map((icon,index)=>{
-                            const image = require(`../../../images/Contact/Social/${icon}.svg`);
+                            const image = require(`../../../images/Contact/Social/${icon.name}.svg`);
                             return(
-                                <a href="#home" target="_blank" rel="norefferer" key={index} className="contact_social">
-                                    <img src={image}  alt={icon} />
+
+                                <a href={icon.link} target="_blank" rel="noreferrer" key={index} className="contact_social">
+                                <img src={image}  alt={icon.name} />
                                 </a>
+                                
                             )
                         })
                     }

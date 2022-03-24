@@ -1,14 +1,17 @@
 import "./ContactForm.css";
-import {useState} from "react"
-const ContactForm = () => {
+import {useState} from "react";
+import axios from "axios";
+import { PulseLoader } from "react-spinners";
+import toast, { Toaster } from 'react-hot-toast';
 
+const ContactForm = () => {
 
     const [fname,setFname] = useState("");
     const [lname,setLname] = useState("");
     const [mail,setMail] = useState("");
     const [phn,setPhn] = useState("");
     const [msg,setMsg] = useState("");
-
+    let [loading, setLoading] = useState(false);
 
     const fnameChangeHandler = (e)=>{
         setFname(e.target.value);
@@ -30,20 +33,45 @@ const ContactForm = () => {
         setMsg(e.target.value);
     }
 
-    const contactFormHandler = (e)=>{
+    const contactFormHandler = async(e)=>{
         e.preventDefault();
         const userQuery = {
             fname,
             lname,
-            mail,
+            from:mail,
+            subject : "User Query",
             phn,
-            msg
+            text:msg
         }
-        console.log(userQuery);
+
+        setLoading(true);
+
+        const result = await axios.post("http://localhost:5000/v1/contact-team",userQuery);
+
+        if(result.status === 200){
+            toast.success("mail send to team");
+            setLoading(false);
+            reset();
+        }
+        else{
+            toast.error('error in sending mail');
+            setLoading(false);
+            reset();
+            return
+        }
+    }
+
+    const reset = ()=>{
+        setFname('');
+        setLname('');
+        setMail('');
+        setMsg('');
+        setPhn('');
     }
 
     return (  
        <form className="contact_form_element" onSubmit={contactFormHandler}>
+           <Toaster />
             <div className="contact_form">
                 <div className="input_container">
                     <label className="contact_user">FirstName</label>
@@ -67,7 +95,7 @@ const ContactForm = () => {
                 </div>
             </div>
             <div className="contact_submit">
-                <button type="submit">Send Message</button>
+                <button type="submit">{loading ? <PulseLoader loading={loading} margin={2} color="#ffff" size={8}/> : "Send Message"}</button>
             </div>
        </form>
     );

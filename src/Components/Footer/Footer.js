@@ -2,13 +2,26 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 const Footer = () => {
 
-    const icons = ["facebook","insta","mail"];
+    const icons = [
+        {
+            name:"facebook",
+            link:"#"
+        },
+        {
+            name:"insta",
+            link:"https://instagram.com/synergy_22.0?utm_medium=copy_link"
+        },
+        {
+            name:"mail",
+            link:"mailto:gcesynergy2022@gmail.com"
+        }
+    ];
 
     return ( 
         <div className="footer">
             <div className="logo_container">
                 <h2>Synergy</h2>
-                <p>Synergy 22.0 is organised by the society of  <b>E</b>lectrical and <b>E</b>lectronics <b>E</b>ngineering.</p>
+                <p>Synergy 22.0 is organised by the Society for the Advancement of <b>E</b>lectrical and <b>E</b>lectronics <b>E</b>ngineering (SAEEE).</p>
             </div>
             <ul className="link_part">
                 <Link to="/"><li>Home</li></Link>
@@ -21,10 +34,10 @@ const Footer = () => {
                 <div className="social_icons">
                     {
                         icons.map((icon,index)=>{
-                            const image = require(`../../images/Footer/${icon}.svg`);
+                            const image = require(`../../images/Footer/${icon.name}.svg`);
                             return(
-                                <a href="#home" target="_blank" rel="norefferer" key={index}>
-                                    <img src={image}  alt={icon} />
+                                <a href={icon.link} target="_blank" rel="noreferrer" key={index}>
+                                    <img src={image}  alt={icon.name} />
                                 </a>
                             )
                         })

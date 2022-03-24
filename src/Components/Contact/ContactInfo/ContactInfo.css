@@ -31,4 +31,7 @@
     .contact_social{ 
         justify-self: center;
     }
+    .contact_social_icons{
+        margin-top: 25px;
+    }
 }

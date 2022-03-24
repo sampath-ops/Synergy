@@ -5,6 +5,7 @@ import {db} from "../../fierbaseConfig";
 import Thanks from "./Thanks";
 import axios from "axios";
 import ClipLoader from "react-spinners/ClipLoader";
+import { toast,Toaster } from "react-hot-toast";
 
 const Form = () => {
 
@@ -120,15 +121,19 @@ const Form = () => {
         {
              // Add a new document in collection "cities"
              await addDoc(collection(db, "students"), details);
+             toast.success("Registered Successfull");
+             window.setTimeout(()=>{
+                setThanks(true);
+             },3000);
+             reset();
+             setLoading(false);
         }
         else{
-            alert("Registeration failed :( please contact our team");
+            toast.error("Registeration failed :( please contact our team");
+            reset();
+            setLoading(false);
             return;
-        }
-        // console.log(details);
-
-        setThanks(true);
-        reset();
+        }    
 
     }
 
@@ -159,6 +164,7 @@ const Form = () => {
         {
             thanks ? <Thanks studentAbstract={studentInfo}/> : 
         <form className="register_form" onSubmit={getDataHandler}>
+            <Toaster/>
             <h2>Register</h2>
             <input type="text" placeholder="Enter Name" value={name} onChange={nameChangeHandler} required/>
             <input type="email" placeholder="Enter Email" value={email} onChange={emailChangeHandler} required/>

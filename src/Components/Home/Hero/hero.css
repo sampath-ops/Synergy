@@ -128,9 +128,6 @@
 }
 
 @media(max-width:1023px){
-	.hero__title{
-		top: 50%;
-	}
 	.btn-hover{
 		width: 150px;
 		height: 40px;

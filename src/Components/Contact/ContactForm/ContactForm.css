@@ -40,6 +40,7 @@
 }
 
 .contact_submit > button{
+    width: 34%;
     padding: 14px 35px;
     color: white;
     background: black;
@@ -65,5 +66,9 @@
     }
     .input_container:last-child > textarea{
         margin-top: 8px;
+    }
+    .contact_submit > button{
+        width: 45%;
+        padding: 12px 22px;
     }
 }
