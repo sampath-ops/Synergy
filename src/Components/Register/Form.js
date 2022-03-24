@@ -112,10 +112,11 @@ const Form = () => {
         const mailData = {
             to : email,
             subject:"Registered for Synergy Events",
-            text: uniqueId
+            text: uniqueId,
+            userDetails:details
         }
 
-        const result = await axios.post("https://stark-earth-12970.herokuapp.com/v1/text-mail",mailData);
+        const result = await axios.post("http://localhost:5000/v1/text-mail",mailData);
 
         if(result.status === 200)
         {

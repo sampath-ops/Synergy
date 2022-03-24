@@ -46,7 +46,7 @@ const ContactForm = () => {
 
         setLoading(true);
 
-        const result = await axios.post("http://localhost:5000/v1/contact-team",userQuery);
+        const result = await axios.post("https://stark-earth-12970.herokuapp.com/v1/contact-team",userQuery);
 
         if(result.status === 200){
             toast.success("mail send to team");

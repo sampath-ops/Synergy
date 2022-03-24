@@ -6,7 +6,7 @@ const EventCard = (props) => {
             <p className="name_event">{props.Eventname}</p>
             <p>{props.text}</p> 
 
-            {props.Eventname === "Project Expo" || props.Eventname === "Paper conferal" ? <Link to={`/events/${props.Eventname.split(" ")[0]}`} className="rules">Rules &gt;</Link> : ""}
+            {props.Eventname === "Project Expo" || props.Eventname === "Paper conferal" ? <Link to={`/events/${props.Eventname.split(" ")[0]}`} className="rules">Guide Lines &gt;</Link> : ""}
 
             <Link to="/register"><button className="participate">Participate</button></Link>
         </div>
