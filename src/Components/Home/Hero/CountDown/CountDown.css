@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     column-gap: 8px;
+    margin-top: 50px;
 }
 
 .count_down{
@@ -14,6 +15,7 @@
         background-color: transparent;
         padding: 8px;
         width: 90px;
+        font-size: 32px;
 }
 
 .timer_box > span{
@@ -113,9 +115,15 @@
   @media(max-width:1023px){
         .days_left{
                 font-size: 18px;
-                column-gap: 0;
+                column-gap: 4px;
         }
         .timer_box{
                 width: 62px;
+                font-size: 18px;
+                margin: 5px;
+                padding: 6px;
+        }
+        .timer_box > span{
+                font-size: 9px;
         }
   }

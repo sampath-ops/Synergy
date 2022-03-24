@@ -108,18 +108,23 @@ const Form = () => {
 
         setLoading(true);
 
-        // Add a new document in collection "cities"
-        await addDoc(collection(db, "students"), details);
-
         const mailData = {
             to : email,
             subject:"Registered for Synergy Events",
             text: uniqueId
         }
 
-        await axios.post("https://stark-earth-12970.herokuapp.com/v1/text-mail",mailData);
+        const result = await axios.post("https://stark-earth-12970.herokuapp.com/v1/text-mail",mailData);
 
-        // console.log(result);
+        if(result.status === 200)
+        {
+             // Add a new document in collection "cities"
+             await addDoc(collection(db, "students"), details);
+        }
+        else{
+            alert("Registeration failed :( please contact our team");
+            return;
+        }
         // console.log(details);
 
         setThanks(true);

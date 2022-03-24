@@ -17,8 +17,8 @@ const Hero = () => {
             <div className="hero__title"> 
                 <p>Synergy</p>
                 <Link to="/register"><button className="btn-hover color-3">Register Now</button></Link>
-                <Count/>
                 <CountDown/>
+                <Count/>
             </div>
             
         </div>
