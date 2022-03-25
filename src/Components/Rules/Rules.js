@@ -1,28 +1,35 @@
 import NavBar from "../Navbar/navbar";
 import "./Rules.css";
-const Rules = ({rules}) => {
+import { guidelines } from "./GuideLines";
+const Rules = () => {
 
     return (
        <NavBar className="second_nav">
             <div className="rules_container">
-               <h2>{rules.head}</h2>
-               <p>{rules.text}</p>
-               <h3>TITLE</h3>
-               <ul>
-                   {
-                       rules.titles.map((title,index)=>(
-                           <li className="points" key={index}>{title}</li>
-                       ))
-                   }
-               </ul>
-               <h3>RULES</h3>
-               <ul>
-                   {
-                       rules.rules.map((title,index)=>(
-                           <li key={index}>{title}</li>
-                       ))
-                   }
-               </ul>
+               {
+                   guidelines.map((guideline,index)=>(
+                        <div className="guideline-container" id={`${guideline.id}`} key={index}>
+                            <h2>{guideline.head}</h2>
+                            <p>{guideline.text}</p>
+                            {/* <h3>TITLE</h3>
+                            <ul>
+                                {
+                                    rules.titles.map((title,index)=>(
+                                        <li className="points" key={index}>{title}</li>
+                                    ))
+                                }
+                            </ul> */}
+                            <h3>GuideLines</h3>
+                            <ul>
+                                {
+                                    guideline.rules.map((rule,index)=>(
+                                        <li key={index}>{rule}</li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+                   ))
+               }
             </div>
        </NavBar>
       );
