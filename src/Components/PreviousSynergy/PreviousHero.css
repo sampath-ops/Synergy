@@ -1,0 +1,12 @@
+.carousel-root{
+    margin-top: 80px;
+}
+.carousel .slide img{
+    height: 115vh;
+}
+
+@media(max-width:1023px){
+    .carousel .slide img{
+        height: inherit;
+    }
+}
