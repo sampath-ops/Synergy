@@ -1,0 +1,23 @@
+.grid_layout{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
+.side_layout{
+    display: grid;
+}
+.side_layout > img{
+    width: 100%;
+}
+.previous_synergy > h2{
+    margin: 20px 20px;
+}
+
+@media(max-width:1023px){
+    .grid_layout{
+        grid-template-columns: auto;
+        row-gap: 15px;
+    }
+}
