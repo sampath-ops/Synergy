@@ -1,7 +1,7 @@
 import "./MomentCards.css";
 const MomentCards = () => {
 
-    const momentCardImages =  ["pic5","pic4","pic6","pic10","pic13"];
+    const momentCardImages =  ["pic5","pic4","pic6","pic11","pic3"];
 
 
     return ( 

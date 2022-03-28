@@ -21,12 +21,12 @@ const Footer = () => {
         <div className="footer">
             <div className="logo_container">
                 <h2>Synergy</h2>
-                <p>Synergy 22.0 is organised by the Society for the Advancement of <b>E</b>lectrical and <b>E</b>lectronics <b>E</b>ngineering (SAEEE).</p>
+                <p>Synergy 22.0 is organised by the <b>S</b>ociety for the <b>A</b>dvancement of <b>E</b>lectrical and <b>E</b>lectronics <b>E</b>ngineering (SAEEE).</p>
             </div>
             <ul className="link_part">
                 <Link to="/"><li>Home</li></Link>
                 <Link to="/events"><li>Events</li></Link>
-                <Link to="/previous-synergy"><li>Memory</li></Link>  
+                <Link to="/previous-synergy"><li>Memories</li></Link>  
             </ul>
             <ul className="link_part">
                 <Link to="/register"><li>Register</li></Link>

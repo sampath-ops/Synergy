@@ -6,7 +6,7 @@ import "./PreviousHero.css";
 class PreviousHero extends Component {
     render() {
 
-        const carouselImages = ["pic8","pic1","pic2","pic9"];
+        const carouselImages = ["pic8","pic1","pic2","pic12"];
 
         return (
             <Carousel infiniteLoop={true} autoPlay={true} interval={2000} showThumbs={false} showStatus={false}>

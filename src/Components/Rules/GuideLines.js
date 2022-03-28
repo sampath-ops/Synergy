@@ -6,7 +6,7 @@ export const guidelines = [
         rules:[
             "Maximum number of participants in a team is: Two.",
             "Each participant will get 4 mins for presentation within 12-15 slides + 2 mins for queries.",
-            "The presentation should be only in MS PowerPoint (ppt/pptx) or pdf format.",
+            "The presentation should be only in MS PowerPoint (ppt/pptx).",
             "The participant should bring soft copy of ppt in pen drive and 3 copies of abstract on the day of event.",
             "The abstract should be in IEEE format.",
             "Participants are requested to send your presentation and abstract in advance to papers@synergyxv.in within (19.04.2022).",

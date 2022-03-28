@@ -69,6 +69,18 @@ function NavBar(props) {
               </NavLink>
             </li>
 
+            <li className="nav-item">
+              <a   
+                href="https://gcesalem.edu.in/"
+                target="_blank"
+                rel="noreferrer"
+                activeclassname="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+              >
+                About GCE
+              </a>
+            </li>
             
             <li className="nav-item">
               <NavLink   
