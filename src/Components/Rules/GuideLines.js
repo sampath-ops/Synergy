@@ -14,7 +14,11 @@ export const guidelines = [
             "Subject of mail and file name should be the TITLE OF THE PAPER.",
             "File name should be in UPPER CASE.",
             "The decision of judges will be final."
-        ]
+        ],
+        contact:{
+            name:"V.Gobibalan",
+            number:"6379756559"
+        }
     },
     {
         id:"project",
@@ -29,7 +33,11 @@ export const guidelines = [
             "Subject of mail and file name should be the TITLE OF THE PROJECT.",
             "File name should be in UPPER CASE.",
             "The decision of judges will be final."
-        ]
+        ],
+        contact:{
+            name:"A.Thiruvasagam",
+            number:"9087992130"
+        }
     },
     {
         id:"machinery",
@@ -41,7 +49,11 @@ export const guidelines = [
             "Individual participation.",
             "Objective type of questions will be asked.",
             "The best 3 will be awarded."
-        ]
+        ],
+        contact:{
+            name:"V.Balaji",
+            number:"6382885991"
+        }
     },
     {
         id:"circuitrix-circuitDebugging",
@@ -53,7 +65,11 @@ export const guidelines = [
             "Individual participation.",
             "Objective type of questions will be asked.",
             "The best 3 will be awarded."
-        ]
+        ],
+        contact:{
+            name:"R.Vignesh",
+            number:"7538818752"
+        }
     },
     {
         id:"codebuzz",
@@ -65,7 +81,11 @@ export const guidelines = [
             "Individual participation.",
             "Objective type of questions will be asked.",
             "The best 3 will be awarded."
-        ]
+        ],
+        contact:{
+            name:"A.S.Vijayaprakash",
+            number:"8056610916"
+        }
     },
     {
         id:"logix",
@@ -77,7 +97,11 @@ export const guidelines = [
             "Individual participation.",
             "Objective type of questions will be asked.",
             "The best 3 will be awarded."
-        ]
+        ],
+        contact:{
+            name:"P.Ragul",
+            number:"6374196193"
+        }
     },
     {
         id:"mathwar",
@@ -89,7 +113,11 @@ export const guidelines = [
             "Individual participation.",
             "Objective type of questions will be asked.",
             "The best 3 will be awarded."
-        ]
+        ],
+        contact:{
+            name:"M.Lokesh",
+            number:"6385287358"
+        }
     },
     {
         id:"quiz",
@@ -101,7 +129,11 @@ export const guidelines = [
             "Individual participation.",
             "Objective type of questions will be asked.",
             "The best 3 will be awarded."
-        ]
+        ],
+        contact:{
+            name:"P.Krishnan",
+            number:"8270955486"
+        }
     },
     {
         id:"fluenta",
@@ -113,7 +145,11 @@ export const guidelines = [
             "Individual participation.",
             "Objective type of questions will be asked.",
             "The best 3 will be awarded."
-        ]
+        ],
+        contact:{
+            name:"S.Abishek",
+            number:"9500959618"
+        }
     },
     {
         id:"adzap",
@@ -125,7 +161,11 @@ export const guidelines = [
             "Individual participation.",
             "Objective type of questions will be asked.",
             "The best 3 will be awarded."
-        ]
+        ],
+        contact:{
+            name:"A.Abimanyu",
+            number:"7826078947"
+        }
     },
     {
         id:"brainspark",
@@ -137,7 +177,11 @@ export const guidelines = [
             "Individual participation.",
             "Objective type of questions will be asked.",
             "The best 3 will be awarded."
-        ]
+        ],
+        contact:{
+            name:"M.Vijay",
+            number:"9597776084"
+        }
     },
     {
         id:"juniorscientist",
@@ -149,7 +193,11 @@ export const guidelines = [
             "Individual participation.",
             "Descriptive type of questions will be asked.",
             "The best 3 will be awarded."
-        ]
+        ],
+        contact:{
+            name:"M.Mathan",
+            number:"6374596017"
+        }
     },
     {
         id:"photography",
@@ -160,6 +208,10 @@ export const guidelines = [
             "Photographs taken from Google or any other social media will be disqualified.",
             "Participants are requested to send your photographs in advance to                 within (19.04.2022).",
             "The size of the photographs should be, Landscape: 1080 x 566p, Portrait: 1080 x 1350p, Square: 1080 x 1080p."
-        ]
+        ],
+        contact:{
+            name:"P.Aravindyogeshwaran",
+            number:"9751693608"
+        }
     }
 ]
