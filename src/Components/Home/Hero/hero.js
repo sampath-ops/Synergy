@@ -16,6 +16,8 @@ const Hero = () => {
             
             <div className="hero__title"> 
                 <p>Synergy</p>
+                <p>GOVERNMENT COLLEGE OF ENGINEERING, SALEM.</p>
+                <p>DEPARTMENT OF <br /> ELECTRICAL AND ELECTRONICS ENGINEERING</p>
                 <Link to="/register"><button className="btn-hover color-3">Register Now</button></Link>
                 <CountDown/>
                 <Count/>
