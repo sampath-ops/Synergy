@@ -19,15 +19,16 @@
 }
 
  .hero__title > p{
-	 margin: 20px;
+	margin: 14px;
+    font-size: 40px;
  }
  
- .hero__title > p:nth-child(2){
+ .hero__title > p:nth-child(1){
 	 font-size: 25px;
 	 white-space: nowrap;
  }
 
- .hero__title > p:nth-child(3){
+ .hero__title > p:nth-child(2){
 	font-size: 20px ;
 	line-height: 28px;
  }
@@ -137,11 +138,11 @@
 		font-size: 14px;
 		font-weight: 500;
 	}
-	.hero__title> p:nth-child(2){
+	.hero__title> p:nth-child(1){
 		font-size: 17px;
     	white-space: normal; 
 	}
-	.hero__title > p:nth-child(3){
+	.hero__title > p:nth-child(2){
 		font-size: 12px;
 		white-space: nowrap;
 		line-height: 17px;

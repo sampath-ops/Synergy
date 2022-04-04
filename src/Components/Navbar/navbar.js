@@ -18,11 +18,10 @@ function NavBar(props) {
       <nav className={`navbar ${customNavbar}`} onClick={e => e.stopPropagation()}>
         <div className="nav-container">
 
-          <p><NavLink to="/" className="nav-logo">
+          {/* <p><NavLink to="/" className="nav-logo">
             Synergy
-            {/* <i className="fa fa-code"></i> */}
-          </NavLink>
-          </p>
+            </NavLink>
+          </p> */}
           
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
