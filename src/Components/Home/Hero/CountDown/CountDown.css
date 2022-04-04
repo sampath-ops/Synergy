@@ -2,11 +2,18 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     column-gap: 8px;
-    margin-top: 50px;
 }
 
 .count_down{
   margin-top: 20px;
+}
+
+.count_down > p{
+        font-size: 20px;
+        text-align: start;
+        padding-left: 11px;
+        margin: 12px 0;
+        margin-top: 40px;
 }
 
 .timer_box{
@@ -127,5 +134,12 @@
         }
         .timer_box > span{
                 font-size: 9px;
+        }
+        .count-down > p{
+                font-size: 12px;
+                text-align: start;
+                padding-left: 8px;
+                margin: 12px 0;
+                margin-top: 40px;
         }
   }

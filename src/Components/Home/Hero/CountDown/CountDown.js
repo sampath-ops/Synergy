@@ -39,6 +39,7 @@ const CountDown = ()=>{
 
     return(
         <div className="count-down">
+            <p>Registration Ends In :</p>
            <Countdown date={end.getTime()} renderer={renderer}>
                <Completionist/>
            </Countdown>
