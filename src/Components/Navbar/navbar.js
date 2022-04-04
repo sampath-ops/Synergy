@@ -2,6 +2,8 @@ import "./navbar.css";
 import {useState} from "react";
 import { NavLink } from "react-router-dom";
 import Footer from "../Footer/Footer";
+import logo from "../../images/Home/logo.png"
+
 
 function NavBar(props) {
 
@@ -19,7 +21,7 @@ function NavBar(props) {
         <div className="nav-container">
 
           {/* <p><NavLink to="/" className="nav-logo">
-            Synergy
+           <img src={logo} alt="logo" />
             </NavLink>
           </p> */}
           

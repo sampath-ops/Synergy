@@ -27,7 +27,7 @@ const ContactInfo = () => {
             </div>
 
             <div className="contact_details_container">
-                <h2>Student Co-ordinator</h2>
+                <h2>Student Co-Ordinator</h2>
                 <div className="contact_details" style={{margin:"18px 0px"}}>
                     <img src={phone} alt="phone" id="contact_phone_image"/>
                    <div className="number">

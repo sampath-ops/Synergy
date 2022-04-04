@@ -27,6 +27,11 @@ const Rules = () => {
                                     ))
                                 }
                             </ul>
+                            <div className="contact_guideLines">
+                                <h3 style={{margin: "10px 0"}}>Contact</h3>
+                                <span>{guideline.contact.name} - {guideline.contact.number}</span>
+                                <span></span>
+                            </div>
                         </div>
                    ))
                }

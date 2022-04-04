@@ -16,7 +16,7 @@ export const guidelines = [
             "The decision of judges will be final."
         ],
         contact:{
-            name:"V.Gobibalan",
+            name:"Gobibalan",
             number:"6379756559"
         }
     },
@@ -35,8 +35,8 @@ export const guidelines = [
             "The decision of judges will be final."
         ],
         contact:{
-            name:"A.Thiruvasagam",
-            number:"9087992130"
+            name:"Yogesh",
+            number:"7639210979"
         }
     },
     {
@@ -51,7 +51,7 @@ export const guidelines = [
             "The best 3 will be awarded."
         ],
         contact:{
-            name:"V.Balaji",
+            name:"Balaji",
             number:"6382885991"
         }
     },
@@ -67,7 +67,7 @@ export const guidelines = [
             "The best 3 will be awarded."
         ],
         contact:{
-            name:"R.Vignesh",
+            name:"Vignesh",
             number:"7538818752"
         }
     },
@@ -83,7 +83,7 @@ export const guidelines = [
             "The best 3 will be awarded."
         ],
         contact:{
-            name:"A.S.Vijayaprakash",
+            name:"Vijayaprakash",
             number:"8056610916"
         }
     },
@@ -99,7 +99,7 @@ export const guidelines = [
             "The best 3 will be awarded."
         ],
         contact:{
-            name:"P.Ragul",
+            name:"Ragul",
             number:"6374196193"
         }
     },
@@ -115,7 +115,7 @@ export const guidelines = [
             "The best 3 will be awarded."
         ],
         contact:{
-            name:"M.Lokesh",
+            name:"Lokesh",
             number:"6385287358"
         }
     },
@@ -131,7 +131,7 @@ export const guidelines = [
             "The best 3 will be awarded."
         ],
         contact:{
-            name:"P.Krishnan",
+            name:"Krishnan",
             number:"8270955486"
         }
     },
@@ -147,7 +147,7 @@ export const guidelines = [
             "The best 3 will be awarded."
         ],
         contact:{
-            name:"S.Abishek",
+            name:"Abishek",
             number:"9500959618"
         }
     },
@@ -163,7 +163,7 @@ export const guidelines = [
             "The best 3 will be awarded."
         ],
         contact:{
-            name:"A.Abimanyu",
+            name:"Abimanyu",
             number:"7826078947"
         }
     },
@@ -179,7 +179,7 @@ export const guidelines = [
             "The best 3 will be awarded."
         ],
         contact:{
-            name:"M.Vijay",
+            name:"Vijay",
             number:"9597776084"
         }
     },
@@ -195,7 +195,7 @@ export const guidelines = [
             "The best 3 will be awarded."
         ],
         contact:{
-            name:"M.Mathan",
+            name:"Mathan",
             number:"6374596017"
         }
     },
@@ -210,7 +210,7 @@ export const guidelines = [
             "The size of the photographs should be, Landscape: 1080 x 566p, Portrait: 1080 x 1350p, Square: 1080 x 1080p."
         ],
         contact:{
-            name:"P.Aravindyogeshwaran",
+            name:"Aravindyogeshwaran",
             number:"9751693608"
         }
     }
