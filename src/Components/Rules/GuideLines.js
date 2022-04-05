@@ -83,8 +83,8 @@ export const guidelines = [
             "The best 3 will be awarded."
         ],
         contact:{
-            name:"Vijayaprakash",
-            number:"8056610916"
+            name:"Karthick",
+            number:"8754129348"
         }
     },
     {
@@ -195,8 +195,8 @@ export const guidelines = [
             "The best 3 will be awarded."
         ],
         contact:{
-            name:"Mathan",
-            number:"6374596017"
+            name:"Surya",
+            number:"6379223325"
         }
     },
     {
@@ -206,7 +206,8 @@ export const guidelines = [
         rules:[
             "Participants should submit the high-resolution original photograph shoot on their own.",
             "Photographs taken from Google or any other social media will be disqualified.",
-            "Participants are requested to send your photographs in advance to                 within (19.04.2022).",
+            "Any concepts with innovative ideas are most welcome.",
+            "Participants are requested to send your photographs in advance to gcesynergyphotography2022@gmail.com within (19.04.2022).",
             "The size of the photographs should be, Landscape: 1080 x 566p, Portrait: 1080 x 1350p, Square: 1080 x 1080p."
         ],
         contact:{

@@ -23,7 +23,7 @@ const Rules = () => {
                             <ul>
                                 {
                                     guideline.rules.map((rule,index)=>(
-                                        <li key={index}>{rule}</li>
+                                        <li key={index} style={{"word-wrap": "break-word"}}>{rule}</li>
                                     ))
                                 }
                             </ul>
