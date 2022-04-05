@@ -33,7 +33,7 @@ const nonTechEvents = [
         id:"juniorscientist",
         image:"juniorScientist",
         name:"JuniorScientist",
-        content:"Prove that everything is theoretically impossible until it is done."
+        content:"Everything is theoretically impossible until it is done."
     },
     {
         id:"photography",

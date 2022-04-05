@@ -3,7 +3,7 @@ const techEvents = [
         id:"paper",
         image:"paper conferal",
         name:"Paper conferal",
-        content:"Bridge the gap with closed minds through carful dissection of ideas and solid presentation of fact."
+        content:"Bridge the gap with closed minds through careful dissection of ideas and solid presentation of fact."
     },
     {
         id:"project",
@@ -18,7 +18,7 @@ const techEvents = [
         content:"Become more competent with devices."
     },
     {
-        id:"circuitrix-circuitDebugging",
+        id:"circuitrix-circuit Debugging",
         image:"circuitrix",
         name:"Circuitrix-CircuitDebugging",
         content:"More conscious leads to tremendous outcomes. Detect the things that shouldn’t happen."
@@ -33,7 +33,7 @@ const techEvents = [
         id:"logix",
         image:"logix",
         name:"Logix",
-        content:"To think logically means to be continually amazed."
+        content:"To think logically means, To be continually amazed."
     },
     // {
     //     image:"circuitDebugging",

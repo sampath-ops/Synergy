@@ -2,7 +2,7 @@ import NavBar from "../Navbar/navbar";
 import PreviousHero from "./PreviousHero";
 import MomentCards from "./MomentCards";
 import symbol from "../../images/Memories/synergy_symbol.jpg";
-import group1 from "../../images/Memories/pic7.jpg";
+import group1 from "../../images/Memories/pic12.jpg";
 import "./PreviousSynergy.css";
 const PreviousSynergy = () => {
     return ( 
@@ -14,9 +14,9 @@ const PreviousSynergy = () => {
                     <PreviousHero/> 
                     <div className="side_layout">
                         <img src={symbol} alt="synergy" />
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, aspernatur?</p>
+                        <p>The strongest logos tell simple stories.</p>
                         <img src={group1} alt="group" />
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, aspernatur?</p>
+                        <p>You guys are my human diary...</p>
                     </div> 
                 </div>    
             </div>
