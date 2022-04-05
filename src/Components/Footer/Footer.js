@@ -5,7 +5,7 @@ const Footer = () => {
     const icons = [
         {
             name:"facebook",
-            link:"#"
+            link:"https://www.facebook.com/Synergy-22-108351131839131/"
         },
         {
             name:"insta",

@@ -6,6 +6,13 @@
 	 overflow: hidden;
 	 font-family: 'Montserrat', sans-serif;
 }
+.nav-logo > img{
+	position: absolute;
+    top: -18px;
+    left: -23px;
+    width: 13%;
+    user-select: auto;
+}
 .saeee_box > img{
 	width: 15%;
     position: absolute;

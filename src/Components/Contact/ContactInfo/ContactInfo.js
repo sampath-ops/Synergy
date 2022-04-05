@@ -7,7 +7,7 @@ const ContactInfo = () => {
     const icons = [
         {
             name:"facebook",
-            link:"#"
+            link:"https://www.facebook.com/Synergy-22-108351131839131/"
         },
         {
             name:"insta",
@@ -50,7 +50,7 @@ const ContactInfo = () => {
                 </div>
                 <div className="contact_details">
                     <img src={location} alt="phone" />
-                    <span>Gce Karuppur, Salem</span>
+                    <span>GCE, Salem-11.</span>
                 </div>
             </div>
 
