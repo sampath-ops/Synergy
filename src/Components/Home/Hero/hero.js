@@ -2,6 +2,9 @@ import "./hero.css";
 import { Link } from "react-router-dom";
 import CountDown from "./CountDown/CountDown";
 import Count from "./Count/Count";
+import synergy from "../../../images/saeee_logo.png";
+import gce from "../../../images/gce_salem.png";
+
 const Hero = () => {
 
       return (
@@ -13,7 +16,15 @@ const Hero = () => {
             <div className="cube"></div>
             <div className="cube"></div>
             <div className="cube"></div>
-            
+
+            <div className="saeee_box">
+                <img src={synergy} alt="saeee" />
+            </div>
+
+            <div className="gce_box">
+                <img src={gce} alt="saeee" />
+            </div>
+
             <div className="hero__title"> 
                 <p>GOVERNMENT COLLEGE OF ENGINEERING, SALEM.</p>
                 <p>DEPARTMENT OF <br /> ELECTRICAL AND ELECTRONICS ENGINEERING</p>

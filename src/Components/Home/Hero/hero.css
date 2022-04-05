@@ -6,6 +6,18 @@
 	 overflow: hidden;
 	 font-family: 'Montserrat', sans-serif;
 }
+.saeee_box > img{
+	width: 15%;
+    position: absolute;
+    top: 30%;
+    left: 4%;
+}
+.gce_box > img{
+	width: 18%;
+    position: absolute;
+    top: 25%;
+    right: 4%;
+}
  .hero__title {
 	 color: #fff;
 	 position: absolute;
@@ -146,5 +158,15 @@
 		font-size: 12px;
 		white-space: nowrap;
 		line-height: 17px;
+	}
+	.saeee_box > img{
+		width: 26%;
+		top: 36%;
+		left: -1%;
+	}
+	.gce_box > img{
+		width: 37%;
+		top: 32%;
+		right: -5%;
 	}
 }

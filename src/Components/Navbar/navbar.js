@@ -2,7 +2,7 @@ import "./navbar.css";
 import {useState} from "react";
 import { NavLink } from "react-router-dom";
 import Footer from "../Footer/Footer";
-// import logo from "../../images/Home/logo.png"
+// import synergy from "../../images/saeee_logo.png";
 
 
 function NavBar(props) {
@@ -20,10 +20,11 @@ function NavBar(props) {
       <nav className={`navbar ${customNavbar}`} onClick={e => e.stopPropagation()}>
         <div className="nav-container">
 
-          {/* <p><NavLink to="/" className="nav-logo">
-           <img src={logo} alt="logo" />
+          {/* <div className="logo_box">
+            <NavLink to="/" className="nav-logo">
+            <img src={synergy} alt="logo" />
             </NavLink>
-          </p> */}
+          </div> */}
           
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">

@@ -26,10 +26,18 @@ const Footer = () => {
             <ul className="link_part">
                 <Link to="/"><li>Home</li></Link>
                 <Link to="/events"><li>Events</li></Link>
-                <Link to="/previous-synergy"><li>Memories</li></Link>  
+                <Link to="/register"><li>Register</li></Link>
             </ul>
             <ul className="link_part">
-                <Link to="/register"><li>Register</li></Link>
+                <Link to="/previous-synergy"><li>Memories</li></Link>  
+                <a   
+                href="https://gcesalem.edu.in/"
+                target="_blank"
+                rel="noreferrer"
+                activeclassname="active"
+                >
+                About GCE
+                </a>
                 <Link to="/contact-us"><li>Contact</li></Link>
                 <div className="social_icons">
                     {
