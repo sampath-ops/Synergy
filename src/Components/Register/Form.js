@@ -96,7 +96,7 @@ const Form = () => {
         setStudentInfo({id:uniqueId,email});
 
         const details = {
-            id:uniqueId,
+            id:"SYNERGY-"+uniqueId,
             name,
             email,
             phone,
