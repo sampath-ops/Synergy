@@ -2,7 +2,7 @@ import "./navbar.css";
 import {useState} from "react";
 import { NavLink } from "react-router-dom";
 import Footer from "../Footer/Footer";
-import synergy from "../../images/synergy.png";
+import synergy from "../../images/synergy.webp";
 
 
 function NavBar(props) {
