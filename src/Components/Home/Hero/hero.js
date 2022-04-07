@@ -26,9 +26,9 @@ const Hero = () => {
             </div>
 
             <div className="hero__title"> 
-                <p>GOVERNMENT COLLEGE OF ENGINEERING, SALEM.</p>
+                <p>GOVERNMENT COLLEGE OF ENGINEERING, SALEM-11.</p>
                 <p>DEPARTMENT OF <br /> ELECTRICAL AND ELECTRONICS ENGINEERING</p>
-                <p>Synergy</p>
+                <p style={{color:"#d7b249"}}>Synergy</p>
                 <Link to="/register"><button className="btn-hover color-3">Register Now</button></Link>
                 <CountDown/>
                 <Count/>
