@@ -179,8 +179,8 @@ export const guidelines = [
             "The best 3 will be awarded."
         ],
         contact:{
-            name:"Vijay",
-            number:"9597776084"
+            name:"Balakumar",
+            number:"63813 25288"
         }
     },
     {
