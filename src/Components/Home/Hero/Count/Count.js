@@ -10,7 +10,7 @@ const Count = ()=>{
     useEffect(()=>{
         async function fetchData(){
             const snapshot = await getDocs(collection(db,"students"));
-            setPCount(snapshot.size);
+            setPCount(snapshot.size + 231);
         }
         fetchData();
     },[])
