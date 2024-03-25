@@ -1,7 +1,7 @@
 ## SYNERGY ## 
 Site for the 2022 Symposium conducted in EEE Department of Government College Of Engineering - Salem
 
-[View site 🔎](https://gcesynergy2022.netlify.app/events)
+[View site 🔎](https://gcesynergy2022.netlify.app)
 
 ### STACK USED ###
 The Application is developed with **React** with **firebase** to store the registration details.
