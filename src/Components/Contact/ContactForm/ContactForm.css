@@ -13,6 +13,7 @@
     margin-left: 0;
     font-size: 16px;
     font-weight: 500;
+    display: block;
 }
 .input_container > input{
     outline: none;

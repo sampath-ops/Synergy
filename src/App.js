@@ -1,7 +1,7 @@
-import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import { BrowserRouter as Router,Routes,Route, Navigate} from 'react-router-dom';
 import Home from './Components/Home/home';
 import Events from './Components/Events/events';
-import Register from './Components/Register/register';
+// import Register from './Components/Register/register';
 import PreviousSynergy from './Components/PreviousSynergy/PreviousSynergy';
 import Contact from './Components/Contact/contact';
 import Rules from './Components/Rules/Rules';
@@ -18,7 +18,7 @@ function App() {
         <Route path="/guide-lines" element={<Rules/>}/>
         <Route path="/events/Project" element={<Rules rules={ProjectRules}/>}/>
         <Route path="/events/Paper" element={<Rules rules={PaperPresentationRules}/>}/>
-        <Route path="/register" element={<Register/>}/>
+        <Route path="/register" element={<Navigate replace to="/" />}/>
         <Route path="/previous-synergy" element={<PreviousSynergy/>}/>
         <Route path="/contact-us" element={<Contact/>}/>
       </Routes> 

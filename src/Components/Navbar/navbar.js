@@ -21,8 +21,8 @@ function NavBar(props) {
         <div className="nav-container">
 
           <div className="logo_box">
-            <NavLink to="/" className="nav-logo">
-            <img src={synergy} alt="logo" />
+            <NavLink to="/" className="">
+            <img src={synergy}alt="logo" />
             </NavLink>
           </div>
           
